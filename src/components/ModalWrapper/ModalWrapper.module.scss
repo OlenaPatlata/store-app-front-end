@@ -1,0 +1,15 @@
+@import '../../assets/sass/main.scss';
+.modal {
+  height: 100vh;
+  background-color: var(--main-bg-cl);
+  // box-shadow: 10px 10px 20px rgba(9, 30, 63, 0.2);
+  @include vp(mobile) {
+    width: 100vw;
+  }
+  @include vp(tablet) {
+    width: 40vw;
+  }
+  @include vp(desktop) {
+    width: 30vw;
+  }
+}

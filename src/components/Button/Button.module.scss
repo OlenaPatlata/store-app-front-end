@@ -1,0 +1,34 @@
+@import '../../assets/sass/main.scss';
+.registerBtn {
+  @include font(600, 10px, 2);
+  color: var(--main-bg-cl);
+  background-color: var(--main-text-cl);
+  border: 1px solid var(--main-text-cl);
+  padding-top: 5px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all 250ms linear;
+  border-radius: 3px;
+  display: block;
+}
+.registerBtn:hover,
+.registerBtn:focus {
+  background-color: var(--additional-bg-cl);
+  border: 1px solid var(--additional-bg-cl);
+  box-shadow: 4px 4px 8px rgba(36, 42, 55, 0.15);
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border: none;
+  background-color: transparent;
+  width: 27px;
+  height: 18px;
+}
+
+.icon {
+  color: var(--main-text-cl);
+}

@@ -1,0 +1,21 @@
+@import '../../assets/sass/main.scss';
+.white {
+  color: var(--main-bg-cl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.black {
+  color: var(--additional-bg-cl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.smoll {
+  @include font(600, 28px, 1.5);
+  letter-spacing: 0.95px;
+}
+.big {
+  @include font(700, 38px, 1.5);
+  letter-spacing: 0.95px;
+}

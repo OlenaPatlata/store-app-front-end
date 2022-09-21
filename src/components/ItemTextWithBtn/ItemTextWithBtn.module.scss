@@ -1,0 +1,25 @@
+@import '../../assets/sass/main.scss';
+.itemTextWithBtn {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: var(--main-text-cl);
+  border-bottom: 1px solid var(--secondary-bg-cl);
+  padding-bottom: 14px;
+  padding-top: 17px;
+  transition: all 250ms linear;
+  @include font(600, 11px, 1.45);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+// .itemTextWithBtn:not(:last-child) {
+//   margin-bottom: 80px;
+// }
+.itemTextWithBtn:hover,
+.itemTextWithBtn:focus {
+  background-color: var(--secondary-bg-cl);
+}
+.textWrapper {
+  flex-grow: 2;
+}
