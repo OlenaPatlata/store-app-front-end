@@ -1,0 +1,29 @@
+@import '../../assets/sass/main.scss';
+.field {
+  border: none;
+  @include font(400, 11px, 1.45);
+  letter-spacing: 0.8px;
+  width: 100%;
+}
+
+fieldset {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 3px;
+  border: 1px solid var(--additional-border-cl);
+}
+.error {
+  color: var(--error-cl);
+  @include font(400, 11px, 1.45);
+  letter-spacing: 0.8px;
+  position: absolute;
+  top: -15px;
+  display: block;
+  height: auto;
+  z-index: 3000;
+}

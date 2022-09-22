@@ -1,0 +1,36 @@
+@import '../../assets/sass/main.scss';
+.wrapperSubscribe {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 100%;
+  @include vp(tablet) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.text {
+  display: block;
+  width: 100%;
+  @include font(400, 12px, 1.5);
+  letter-spacing: 0.872727px;
+  margin-bottom: 14px;
+}
+.formSubscribe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.formSubscribe fieldset {
+  margin-right: 8px;
+  width: 224px;
+  @include vp(tablet) {
+    margin-right: 12px;
+    width: 334px;
+  }
+}

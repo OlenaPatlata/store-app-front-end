@@ -1,0 +1,17 @@
+@import '../../assets/sass/main.scss';
+.itemText {
+  font-family: 'Poppins';
+  display: flex;
+  justify-content: flex-start;
+  color: var(--main-text-cl);
+  padding-bottom: 5px;
+  padding-top: 5px;
+  transition: all 250ms linear;
+  @include font(400, 12px, 1.58);
+  letter-spacing: 0.1px;
+}
+
+.itemText:hover,
+.itemText:focus {
+  background-color: var(--additional-border-cl);
+}

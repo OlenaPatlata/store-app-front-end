@@ -36,3 +36,27 @@ export const categoris = [
   { "outlet": [] },
   { 'stories': [] }];
   
+export const about = [
+  {
+    "About Us": [
+      { "name": "Who we are" },
+      { "name": "Our stores" },
+      { "name": "Customer Reviews" }]
+  },
+  {
+    "Categories": [
+      { "name": "Women fashion" },
+      { "name": "Accessories" },
+      { "name": "Kids" }]
+  },
+  {
+    "Help": [
+      { "name": "Customer service" },
+      { "name": "Size guide" },
+      { "name": "Contact us" }]
+  },
+  {
+    "Payments & Delivery": [
+      { "name": "Purchase terms" },
+      { "name": "Guarantee" }]
+  }];

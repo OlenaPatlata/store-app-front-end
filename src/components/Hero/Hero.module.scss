@@ -1,0 +1,26 @@
+@import '../../assets/sass/main.scss';
+.wrapper {
+  background-image: url(../../assets/img/img-hero-light-mob-1x-min.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 360px;
+  margin: 0 auto;
+  min-height: 480px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../assets/img/img-hero-light-mob-2x-min.jpg);
+  }
+  @include vp(desktop) {
+    padding-top: 320px;
+    padding-bottom: 247px;
+    background-image: url(../../assets/img/img-hero-light-desk-1x-min.jpg);
+    max-width: 1440px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../assets/img/img-hero-light-desk-2x-min.jpg);
+    }
+  }
+}

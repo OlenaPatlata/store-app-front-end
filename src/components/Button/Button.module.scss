@@ -1,6 +1,8 @@
 @import '../../assets/sass/main.scss';
 .registerBtn {
   @include font(600, 10px, 2);
+  letter-spacing: 1px;
+  text-transform: uppercase;
   color: var(--main-bg-cl);
   background-color: var(--main-text-cl);
   border: 1px solid var(--main-text-cl);
@@ -11,6 +13,7 @@
   transition: all 250ms linear;
   border-radius: 3px;
   display: block;
+  // width: 96px;
 }
 .registerBtn:hover,
 .registerBtn:focus {

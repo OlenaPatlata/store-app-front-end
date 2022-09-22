@@ -1,3 +1,5 @@
+import ItemText from 'components/ItemText';
+import ItemTextFooter from 'components/ItemTextFooter';
 import ItemTextWithBtn from 'components/ItemTextWithBtn';
 import s from './List.module.scss';
 
@@ -7,6 +9,12 @@ const List = ({ array, name }) => {
       {array?.map(elem => {
         if (name === 'itemTextWithBtn') {
           return <ItemTextWithBtn elem={elem} name={name} />;
+        }
+        if (name === 'itemText') {
+          return <ItemText elem={elem} name={name} />;
+        }
+        if (name === 'itemTextFooter') {
+          return <ItemTextFooter elem={elem} name={name} />;
         }
         return <></>;
       })}
