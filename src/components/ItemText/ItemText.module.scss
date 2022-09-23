@@ -6,9 +6,15 @@
   color: var(--main-text-cl);
   padding-bottom: 5px;
   padding-top: 5px;
+  padding-left: 32px;
+  padding-right: 32px;
   transition: all 250ms linear;
   @include font(400, 12px, 1.58);
   letter-spacing: 0.1px;
+  @include vp(desktop) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .itemText:hover,

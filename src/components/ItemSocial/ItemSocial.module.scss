@@ -1,0 +1,21 @@
+@import '../../assets/sass/main.scss';
+.itemSocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-bg-cl);
+  transition: all 250ms linear;
+  @include vp(desktop) {
+    width: 28px;
+    height: 28px;
+    justify-content: flex-start;
+  }
+}
+.itemSocial:hover,
+.itemSocial:focus {
+  border: 1px solid var(--additional-border-cl);
+  background-color: var(--additional-border-cl);
+}

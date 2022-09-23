@@ -1,21 +1,34 @@
 import List from 'components/List';
-import Media from 'react-media';
 import s from './Footer.module.scss';
-import { about } from 'assets/const';
+import { about, socialIcons } from 'assets/const';
+import Media from 'react-media';
 
 const Footer = () => {
   return (
     <footer className={s.footer}>
+      <List array={about} name="itemTextFooter" />
+
       <Media
-        queries={{ small: '(max-width: 1439px', large: '(min-width: 1440px)' }}
+        queries={{ small: '(max-width: 1439px', medium: '(min-width: 1440px)' }}
       >
         {matches => (
           <>
-            {matches.small && <List array={about} name="itemTextFooter" />}
-            {matches.large && <p>wsedrfg</p>}
+            {matches.small && (
+              <List array={socialIcons[0].Social} name="itemSocial" />
+            )}
+            {matches.medium && (
+              <div>
+                <div className={s.title}>Social</div>
+                <List array={socialIcons[0].Social} name="itemSocial" />
+              </div>
+            )}
           </>
         )}
       </Media>
+
+      <div className={s.copyright}>
+        © Copyright, AELTC 2019. All Rights reserved.
+      </div>
     </footer>
   );
 };

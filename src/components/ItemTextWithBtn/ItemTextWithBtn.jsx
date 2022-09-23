@@ -5,7 +5,7 @@ import { BsChevronRight } from 'react-icons/bs';
 const ItemTextWithBtn = ({ elem, name }) => {
   const [keyName] = Object.keys(elem);
   return (
-    <li className={s[name]} key={keyName}>
+    <li className={s[name]}>
       <div className={s.textWrapper} onClick={e => console.log(e)}>
         {keyName}
       </div>

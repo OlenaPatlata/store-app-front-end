@@ -1,0 +1,21 @@
+@import '../../assets/sass/main.scss';
+ul.itemTextFooter {
+  @include vp(desktop) {
+    display: flex;
+  }
+}
+ul.itemSocial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 87px;
+  padding-right: 87px;
+  padding-top: 24px;
+  padding-bottom: 16px;
+  @include vp(desktop) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

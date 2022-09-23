@@ -1,7 +1,43 @@
 @import '../../assets/sass/main.scss';
 .footer {
   padding-bottom: 23px;
-  padding-left: 16px;
-  padding-right: 16px;
   background-color: var(--secondary-bg-cl);
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  @include vp(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 282px;
+    padding-right: 267px;
+    padding-bottom: 14px;
+    max-width: 1440px;
+  }
+}
+.copyright {
+  @include font(400, 9px, 1.56);
+  letter-spacing: 0.5px;
+  color: var(--main-text-cl);
+  padding-left: 71px;
+  padding-right: 71px;
+  @include vp(desktop) {
+    padding-left: 326px;
+    padding-right: 326px;
+    margin-top: 38px;
+  }
+}
+.title {
+  font-family: 'Abhaya Libre';
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: var(--main-text-cl);
+  padding-bottom: 12px;
+  padding-top: 12px;
+  transition: all 250ms linear;
+  @include font(700, 16px, 1.19);
+  letter-spacing: 1.16364px;
+
+  width: 146px;
+  border-bottom: none;
 }

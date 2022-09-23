@@ -60,3 +60,15 @@ export const about = [
       { "name": "Purchase terms" },
       { "name": "Guarantee" }]
   }];
+export const socialIcons = [
+  {
+    "Social": [
+      { "insta": "BsInstagram" },
+      { "twitter": "BsTwitter" },
+      { "snapchat": "BsSnapchat" },
+      { "facebook": "ImFacebook" },
+      { "youtube": "BsYoutube" }
+    ]
+  }
+];
+

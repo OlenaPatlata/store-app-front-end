@@ -4,24 +4,37 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 16px;
-  padding-right: 16px;
   color: var(--main-text-cl);
   border-bottom: 1px solid var(--additional-border-cl);
-  padding-bottom: 12px;
-  padding-top: 12px;
   transition: all 250ms linear;
   @include font(700, 16px, 1.19);
   letter-spacing: 1.16364px;
+  @include vp(desktop) {
+    width: 146px;
+    border-bottom: none;
+    justify-content: flex-start;
+    margin-right: 40px;
+  }
 }
-.itemTextFooter > div {
+.topWrapper {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  padding-left: 32px;
+  padding-right: 32px;
+  @include vp(desktop) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
-.itemTextFooter:hover,
-.itemTextFooter:focus {
+.topWrapper:hover,
+.topWrapper:focus {
   background-color: var(--additional-border-cl);
+  @include vp(desktop) {
+    background-color: var(--secondary-bg-cl);
+  }
 }
 .textWrapper {
   flex-grow: 2;
