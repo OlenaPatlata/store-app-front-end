@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+Для написання додатку використано React.js, препроцессор SCSS. Розгорнуто
+додаток за допомогою Create React App. Локально проект запускається за допомогою
+скрипту npm start. Для деплоя проекту на Netlify необхідно застосувати скрипт
+npm run deploy.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+При написанні тестового завдання по реалізації сайту магазину виконано наступні
+завдання:
 
-## Available Scripts
+- дизайн для двох ширин екрану згідно макету (мобілка, десктоп). Також міксином
+  передбачена проміжна точка перетину для таблетки для можливості подальшого
+  розширення проекту;
 
-In the project directory, you can run:
+- при натисканні користувачем на кнопку бургер-меню з'являється модальне вікно з
+  переліком категорій для подальших дій;
 
-### `npm start`
+- при натисканні на лупу з'являється фильтр пошукуку, в якому користувач має
+  змогу ввести слова для пошуку конкретного товару або категорії, тощо;
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- в стані ховеру або фокусу header змінює колір, перестає бути прозорим,
+  змінюється колір єлементів розташованих в секції header;
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- в секції hero реалізовано зміну якості фото в залежності від щільності екрану
+  (під ретину);
 
-### `npm test`
+- всі елементи, які передбачають взаємодію з користувачем мають ефекти для
+  станів ховеру та фокусу (зміна фону або колору тексту);
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- при введенні електронної адреси користувачем перед відправкою даних на бек-енд
+  здійснюється перевірка на правильність введення електронної пошти та
+  виводиться текст-підказка для користувача про наявність помилки;
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- при написанні додатку написано два кастомні хуки (для закриття модального
+  вікна кліком на клавішу ESC та для переключення між станами компонента -
+  тогл).

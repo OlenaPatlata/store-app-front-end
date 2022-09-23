@@ -1,8 +1,8 @@
 import s from './Logo.module.scss';
-const Logo = ({ size, color }) => {
+const Logo = ({ size }) => {
   return (
-    <div className={s[color]}>
-      <span className={s[size]}>Aurora</span>
+    <div className={s[size]}>
+      <span className={s.logoText}>Aurora</span>
     </div>
   );
 };

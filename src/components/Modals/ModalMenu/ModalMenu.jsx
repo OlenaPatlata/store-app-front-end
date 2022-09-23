@@ -4,7 +4,7 @@ import List from 'components/List';
 import Logo from 'components/Logo';
 import Button from 'components/Button';
 import { GrClose } from 'react-icons/gr';
-// import { FaMapMarkerAlt } from 'react-icons/fa';
+
 const ModalMenu = ({ categoris, open, onClose }) => {
   return (
     <ModalWrapper open={open} onClose={onClose}>

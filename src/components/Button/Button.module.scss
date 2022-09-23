@@ -13,7 +13,6 @@
   transition: all 250ms linear;
   border-radius: 3px;
   display: block;
-  // width: 96px;
 }
 .registerBtn:hover,
 .registerBtn:focus {
@@ -30,8 +29,9 @@
   background-color: transparent;
   width: 27px;
   height: 18px;
+  color: inherit;
 }
 
 .icon {
-  color: var(--main-text-cl);
+  color: inherit;
 }

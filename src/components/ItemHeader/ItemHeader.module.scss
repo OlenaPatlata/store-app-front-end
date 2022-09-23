@@ -1,0 +1,16 @@
+@import '../../assets/sass/main.scss';
+.itemHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: inherit;
+  transition: all 250ms linear;
+  @include font(600, 13px, 1.54);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.itemHeader:hover,
+.itemHeader:focus {
+  background-color: var(--secondary-bg-cl);
+  cursor: pointer;
+}

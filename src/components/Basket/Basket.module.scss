@@ -1,0 +1,34 @@
+@import '../../assets/sass/main.scss';
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: transparent;
+}
+
+.basketWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  margin-right: 8px;
+}
+
+.icon {
+  color: inherit;
+}
+.amountWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--oval-bg-cl);
+  border: 1px solid var(--oval-bg-cl);
+  @include font(600, 11px, 1.45);
+  letter-spacing: 0.2px;
+  color: var(--main-text-cl);
+}

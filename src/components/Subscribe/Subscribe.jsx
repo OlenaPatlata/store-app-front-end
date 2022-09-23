@@ -35,7 +35,6 @@ const Subscribe = memo(() => {
         console.log('Form Subscribe is legit');
         console.log(values);
       } else {
-        console.log(222222);
         formSubscribeSchema
           .validate(values, { abortEarly: false })
           .catch(err => {

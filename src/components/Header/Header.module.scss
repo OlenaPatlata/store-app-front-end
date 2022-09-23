@@ -1,9 +1,148 @@
 @import '../../assets/sass/main.scss';
-.wrapper {
-  background-color: blueviolet;
+.wrapperHeader {
+  background-color: transparent;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  height: 112px;
+  height: 116px;
+  @include vp(desktop) {
+    height: 169px;
+  }
+}
+.wrapperContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--main-bg-cl);
+  transition: all 250ms linear;
+  @include vp(desktop) {
+    max-width: 1440px;
+  }
+}
+.wrapperContainer:hover,
+.wrapperContainer:focus {
+  color: var(--main-text-cl);
+  background-color: var(--main-bg-cl);
+}
+.wrapperTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 10px;
+  @include vp(desktop) {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+  }
+}
+.wrapperBtnMob {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: inherit;
+}
+.wrapperBottom {
+  padding-top: 24px;
+  padding-left: 400px;
+  padding-right: 399px;
+  padding-bottom: 25px;
+}
+.formWrapperTop {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 15px;
+}
+.formWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--secondary-bg-cl);
+  background-color: var(--secondary-bg-cl);
+  border-radius: 3px;
+  margin-top: 15px;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: inherit;
+  width: 100%;
+  @include vp(desktop) {
+    background-color: rgba(247, 247, 247, 0.24);
+    border: 1px solid rgba(247, 247, 247, 0.24);
+    width: 584px;
+    margin-top: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+  }
+}
+.field {
+  border: none;
+  background-color: transparent;
+  margin-right: 11px;
+  @include font(400, 11px, 1.45);
+  letter-spacing: 0.8px;
+  color: inherit;
+  flex-grow: 2;
+  @include vp(desktop) {
+    background-color: rgba(247, 247, 247, 0.24);
+  }
+}
+.wrapperContainer:hover .field,
+.wrapperContainer:focus .field,
+.wrapperContainer:hover .formWrapper,
+.wrapperContainer:focus .formWrapper {
+  @include vp(desktop) {
+    background-color: var(--secondary-bg-cl);
+  }
+}
+
+.field::placeholder {
+  color: inherit;
+}
+.wrapperBasket {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.text {
+  @include font(600, 11px, 1.45);
+  letter-spacing: 1px;
+  margin-right: 16px;
+}
+.wrapperFirst {
+  background-color: var(--main-bg-cl);
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--main-text-cl);
+  transition: all 250ms linear;
+  @include font(500, 11px, 1.45);
+  letter-spacing: 0.8px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 4px;
+  padding-bottom: 3px;
+}
+.mapWrapper {
+  margin-left: 562px;
+}
+.mapIconWrapper {
+  margin-right: 6px;
+}
+.wrapperContainer:hover .wrapperFirst,
+.wrapperContainer:focus .wrapperFirst {
+  background-color: var(--secondary-bg-cl);
+}
+.wrapperContainer:hover .field,
+.wrapperContainer:focus .field {
+  color: var(--main-text-cl);
 }
